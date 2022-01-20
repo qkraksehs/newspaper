@@ -1,0 +1,230 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  h1, h2, h3, h4 {
+    /* margin-bottom: 1em; */
+  }
+  
+  section h1,
+  section h2, 
+  section h3, 
+  section h4 {
+    margin-bottom: 1em;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #000;
+    width: 1200px;
+    margin: auto;
+    background-image: url(./images/purty_wood_@2X.png);
+  }
+
+  header, #gnb,section {
+      background: #fff;
+  }
+  
+  header {
+    width: 1200px;
+    height: 170px;
+    /* background: #ccc; */
+    position: relative;
+    border-bottom: 2px solid #000;
+    margin-top: 45px;
+  }
+  
+  header .barcode {
+    width: 175px;
+    position: absolute;
+    left: 25px;
+    top: 45px;
+  }
+  
+  header .time {
+    position: absolute;
+    right: 25px;
+    top: 50px;
+    text-align: right;
+  }
+  
+  header .header-group {
+    text-align: center;
+    padding-top: 35px;
+  }
+  
+  header h1 {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  header h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  header p {
+    font-size: 10px;
+    color: #666;
+    text-transform: uppercase;
+  }
+  
+  header .time .day {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  header .time .date {
+    font-size: 24px;
+    font-weight: 900;
+  }
+  
+  /* 네비게이션 */
+  #gnb {
+    width: 1200px;
+    height: 55px;
+    /* background: #ccc; */
+    padding: 20px 25px;
+    border-bottom: 3px solid #000;
+  }
+  
+  #gnb > ul {
+    /* outline: 1px solid red; */
+    overflow: hidden;
+    margin-top: -4px;  
+  }
+  
+  #gnb > ul > li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    border-left: 1px solid #000;
+  }
+  
+  /* 마지막 li에 구분선 추가 */
+  #gnb > ul > li:last-child {
+    border-right: 1px solid #000;
+  }
+  
+  #gnb > ul > li > a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+  /* 본문 */
+  section {
+    column-count: 3;
+    width: 1200px;
+    padding: 25px;
+  }
+  
+  .break-col {
+    break-before: column;
+  }
+  
+  section .article1 h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  section .article2 h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  section .article2 h3 span {
+    font-weight: normal;
+  }
+  
+  section .article3 .gallery {
+    width: 100%;
+    border: 2px solid #000;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .gallery .btn-group button {
+      font-size: 24px;
+      background: transparent;
+      border-style: none;
+      color: red;
+  }
+  .gallery .btn-group button:first-child {
+     margin-right: 20px;
+  }
+
+  .gallery .btn-group button:last-child {
+      margin-left: 20px;
+  }
+
+  section .article3 .today_user {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  section .article3 .today_user h2 span {
+    font-weight: normal;
+  }
+
+  section .article3 .today_list h2 span {
+    font-weight: normal;
+  }
+  
+  section .article3 .today_user .info {
+    overflow: hidden;
+  }
+  
+  section .article3 .today_user .info img {
+    float: left;
+    margin-right: 1em;
+  }
+  
+  section .article3 .today_user .info p {
+    margin-bottom: 5px;
+  }
+  
+  section .article3 .today_user .info-title {
+    margin-top: 1.2em;
+  }
+
+  section .article3 .today_list {
+      border-top: 2px solid #000;
+      padding: 1em 0;
+  }
+
+  section .article3 .today_list ul li a {
+      color: #000;
+  }
+
+  section .article3 .today_list ul li {
+      list-style-image: url(./images/list_style.png);
+  }
+
+  .more-btn {
+      color: #000;
+      margin-left: 1.5em;
+  }
+
+
+  
